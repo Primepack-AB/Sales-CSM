@@ -1,12 +1,8 @@
 {
   "compilerOptions": {
-    "outDir": "lib",
-    "target": "es5",
-    "module": "ESNext",
-    "moduleResolution": "Node",
-    "lib": [
-      "ES2015"
-    ],
+    "outDir": "dist",
+    "target": "ES6",
+    "module": "CommonJS",
     "sourceMap": true,
     "strict": true,
     "strictFunctionTypes": true,
@@ -36,6 +32,12 @@
   "exclude": [
     "lib",
     "**/*.test.ts"
+  ],
+  "ts-node": {
+    "files": true
+  },
+  "files": [
+    "src/server.ts"
   ],
   "typedocOptions": {
     "out": "docs",

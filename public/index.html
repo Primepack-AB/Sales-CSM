@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <style>
+        #terminal-container {
+            height: 100vh;
+        }
+    </style>
+
+    </script>
+</head>
+
+<body>
+    <script type="text/javascript" src="client.js"></script>
+    <div id="login-div">
+        <h1>Login</h1>
+        <label for="email">Enter Username: </label>
+        <input id="email" name="email" type="email" />
+        <br />
+        <label for="password">Enter Password:</label>
+        <input id="password" type="password" />
+        <br />
+        <p id="login-error" style="color: red"></p>
+        <p id="login-result" style="color: green"></p>
+        <button id="login-button">Login</button>
+    </div>
+    <div id="secret-div" style="display: none">
+        <h1>Logs</h1>
+        <div id="logs-list"></div>
+        <br />
+        <button id="refresh-logs-button">Refresh Logs</button>
+        <button id="clear-logs-button">Clear Logs</button>
+        <button id="delete-log-button">Delete Log</button>
+        <p id="logs-error" style="color: red"></p>
+        <div id="log"></div>
+        <p id="log-error" style="color: red"></p>
+        <h1>JWT Token</h1>
+        <p>Access Token: <span id="secret" style="color: green"></span></p>
+        <p id="token-error" style="color: red"></p>
+        <button id="fetch-secret-button">Fetch Token</button>
+        
+        <br />
+        <div id="terminal-container"></div>
+
+        <br />
+        <button id="logout-button">Log out</button>
+    </div>
+</body>
+
+</html>
